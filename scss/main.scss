@@ -1,8 +1,9 @@
 /* Bootstrap Variables */
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-// $grid-gutter-width: 25px;
+$grid-gutter-width: 10px;
 $container-large-desktop: 965px;
-$font-family: "Helvetica";
+$font-family: "Cuprum";
+$break-small: 628px;
 
 
 /* Import Bootstrap */
@@ -16,7 +17,9 @@ BODY STYLING
 
 
 
-
+body {
+  background-color: rgb(62, 62, 64);
+}
 
 
 
@@ -48,17 +51,33 @@ header {
 }
 
 .header-logo {
-  background-image: url(../images/download.png);
+  background-image: url(../images/rabbit.png);
   background-position: center;
-  // background-size: inherit;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 200px;
+  height: 210px;
   width: 200px;
   display: inline-block;
+  margin-top: 18px;
+
 
   h1 {
+
     position: relative;
+  }
+}
+
+.swamp-cyc {
+  font-family: "Arimo";
+  font-size: 3.5em;
+  font-weight: 200;
+  color: rgb(237, 237, 237);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgba(20, 20, 20, .7);
+  @media screen and (max-width: $break-small){
+    font-size: 35px;
   }
 }
 
@@ -70,12 +89,20 @@ FIRST ANNOUNCEMENT
 *************************************************/
 
 
-
 .bringing {
-  height: 150px;
-  text-align: center;
-  font-size: 25px;
-  background-color: #D7DEE8;
+  // margin-top: px;
+
+  .ann {
+    font-size: 1.875em;
+    background-color: rgb(151, 151, 155);
+    padding: 28px 48px;
+    height: 150px;
+    text-align: center;
+    color: rgb(62, 62, 64);
+    @media screen and (max-width: $break-small){
+      font-size: 22px;
+    }
+  }
 
 }
 
@@ -89,7 +116,7 @@ BICYCLE OPTIONS
 
 .featured-bikes {
   height: 300px;
-  // background-color: #D2D5D7;
+  // margin-top: 10px;
 
   .bike-1 {
     background-image: url(../images/roma-red.jpg);
@@ -106,7 +133,7 @@ BICYCLE OPTIONS
   }
 
   .bike-3 {
-    background-image: url(../images/retro.jpg);
+    background-image: url(../images/undefeated.jpeg);
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -123,10 +150,23 @@ SECOND ANNOUNCEMENT
 
 
 .ann-content {
-  height: 180px;
-  background-color: #B6BFCB;
-  text-align: center;
-  font-size: 25px;
+  margin-top: 10px;
+
+  .ann-con {
+    height: 180px;
+    background-color: rgb(151, 151, 155);
+    text-align: center;
+    font-size: 1.563em;
+    padding-top: 27px;
+    padding-left: 65px;
+    padding-right: 65px;
+    color: rgb(62, 62, 64);
+    @media screen and (max-width: $break-small){
+      font-size: 19px;
+      padding-top: 10px;
+    }
+  }
+
 }
 
 
@@ -139,21 +179,34 @@ CONTACT US ELEMENTS
 
 .contact-content {
   height: 350px;
-  background-color: #91A4C1;
+  background-color: rgb(195, 195, 201);
   text-align: center;
+  color: rgb(85, 85, 89);
 
   .visit {
-    font-size: 25px;
+    font-size: 1.563em;
+    padding-top: 45px;
+    padding-left: 55px;
+    padding-right: 55px;
+    // color: rgb(195, 195, 201);
+    // background-color: rgb(85, 85, 89);
+    @media screen and (max-width: $break-small){
+      font-size: 22px;
+    }
+
   }
 
   .number {
-    font-size: 20px;
+    font-size: 1.250em;
     font-weight: bold;
+    padding-top: 45px;
+
   }
 
   .email {
-    font-size: 20px;
+    font-size: 1.250em;
     font-weight: 600;
+    padding-top: 45px;
   }
 }
 
@@ -167,11 +220,20 @@ FOOTER ELEMENTS
 
 .copy {
   height: 89px;
-  background-color: rgb(108, 114, 119);
+  background-color: rgb(85, 85, 89);
+  margin-top: 10px;
 
   .copy-content {
-    font-size: 15px;
+    font-size: 1.563em;
     text-align: center;
-    
+    color: rgb(151, 151, 155);
+    padding-top: 28px;
+    letter-spacing: 2px;
+    @media screen and (max-width: $break-small){
+      font-size: 22px;
+      padding-top: 10px;
+    }
+
+
   }
 }

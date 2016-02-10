@@ -1,0 +1,177 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+// $grid-gutter-width: 25px;
+$container-large-desktop: 965px;
+$font-family: "Helvetica";
+
+
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+
+/*************************************************
+BODY STYLING
+*************************************************/
+
+
+
+
+
+
+
+
+/*************************************************
+HEADER ELEMENTS
+*************************************************/
+
+
+
+header {
+  background-image: url(../images/red-hook.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  position: relative;
+  height: 350px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    background-color: rgba(225, 225, 225, .5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.header-logo {
+  background-image: url(../images/download.png);
+  background-position: center;
+  // background-size: inherit;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+
+  h1 {
+    position: relative;
+  }
+}
+
+
+
+
+/*************************************************
+FIRST ANNOUNCEMENT
+*************************************************/
+
+
+
+.bringing {
+  height: 150px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #D7DEE8;
+
+}
+
+
+
+/*************************************************
+BICYCLE OPTIONS
+*************************************************/
+
+
+
+.featured-bikes {
+  height: 300px;
+  // background-color: #D2D5D7;
+
+  .bike-1 {
+    background-image: url(../images/roma-red.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .bike-2 {
+    background-image: url(../images/contender.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .bike-3 {
+    background-image: url(../images/retro.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+  }
+}
+
+
+
+
+/*************************************************
+SECOND ANNOUNCEMENT
+*************************************************/
+
+
+
+.ann-content {
+  height: 180px;
+  background-color: #B6BFCB;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+/*************************************************
+CONTACT US ELEMENTS
+*************************************************/
+
+
+
+.contact-content {
+  height: 350px;
+  background-color: #91A4C1;
+  text-align: center;
+
+  .visit {
+    font-size: 25px;
+  }
+
+  .number {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .email {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+
+
+/*************************************************
+FOOTER ELEMENTS
+*************************************************/
+
+
+
+.copy {
+  height: 89px;
+  background-color: rgb(108, 114, 119);
+
+  .copy-content {
+    font-size: 15px;
+    text-align: center;
+    
+  }
+}

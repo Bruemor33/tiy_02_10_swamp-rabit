@@ -5879,24 +5879,6 @@ FIRST ANNOUNCEMENT
 /*************************************************
 BICYCLE OPTIONS
 *************************************************/
-.featured-bikes {
-  height: 300px; }
-  .featured-bikes .bike-1 {
-    background-image: url(../images/roma-red.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px; }
-  .featured-bikes .bike-2 {
-    background-image: url(../images/contender.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px; }
-  .featured-bikes .bike-3 {
-    background-image: url(../images/undefeated.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 300px; }
-
 /*************************************************
 SECOND ANNOUNCEMENT
 *************************************************/
